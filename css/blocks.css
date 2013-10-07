@@ -149,6 +149,14 @@ body.page-type-department-option-landing-page #block-views-site-section-title-bl
 	font-size:.8em;
 	margin-bottom:10px;
 } */
+/* Department Contact Info Style */
+.social-media{
+	border:1px solid #CCC;
+	background-color:#eaeaea;
+	padding:10px;
+	font-size:.8em;
+	margin-bottom:10px;
+}
 /* Generic Sidebar Box Style */
 .sidebar-box {
 	border:1px solid #CCC;
@@ -374,23 +382,27 @@ and (min-width : 401px) {
 /* Remove group styling for degree listing on department homepages */
 
 .page-type-department-option-landing-page .degree-group,
-.section-center-for-professional-studies .degree-group {
+.section-center-for-professional-studies .degree-group, 
+.section-product-lifecycle-management .degree-group {
 	background-color:transparent !important;
 }
 
 .page-type-department-option-landing-page #content-wrapper .block-title,
-.section-center-for-professional-studies #content-wrapper .block-title {
+.section-center-for-professional-studies #content-wrapper .block-title,
+.section-product-lifecycle-management #content-wrapper .block-title{
 	font-size:22px;
 	margin-bottom:5px;
 }
 
 .page-type-department-option-landing-page .degree-group a,
-.section-center-for-professional-studies .degree-group a {
+.section-center-for-professional-studies .degree-group a,
+.section-product-lifecycle-management .degree-group a {
 	color:#8C8C8C;
 }
 
 .page-type-department-option-landing-page .degree-group .field-content,
-.section-center-for-professional-studies .degree-group .field-content {
+.section-center-for-professional-studies .degree-group .field-content,
+.section-product-lifecycle-management .degree-group .field-content {
 	color:#444;
 }
 
@@ -467,7 +479,7 @@ h2.views-label-field-amount-received {
 
 /* Make text on featured degree on homepage smaller */
 .front #content_3columnMcWidget-column3 h2 a {
-	font-size:17px !important;
+	/*font-size:17px !important;*/
 }
 
 /* Spacing for related degrees and continuing education on degree pages */
@@ -534,4 +546,52 @@ h2.views-label-field-amount-received {
 
 .region-sidebar-second .block {
 	margin-bottom:10px;
+}
+
+.section-product-lifecycle-management .view-list-of-degrees-on-degree-page h3 {display:none;}
+
+/*Google CSE Search*/
+/* search results */
+#google-cse-results {
+	max-height: 1300px;
+	overflow: hidden;
+}
+
+/***********************************
+50th Anniversary Styling Starts Here
+***********************************/
+
+/*50th anniversary timeline stuff*/
+.view-id-50th_timeline .views-row {
+	border:1px solid #ddd;
+	margin-top:25px;
+}
+.view-id-50th_timeline .views-field-field-date {
+	font-size: 2rem;
+	padding:10px;
+	font-weight:100;
+	color:#6ba1be;
+	background-color:#e3ebee;
+}
+.view-id-50th_timeline h4 {
+	font-size: 1.3rem;
+	font-weight:600;
+	color:#ce6752;
+	padding:10px;
+}
+
+.view-id-50th_timeline .views-field-body {
+	padding:10px;
+}
+
+/*50th anniversary memory forms*/
+.node-memory-form .form-item-title {display:none;}
+.node-memory-form .vertical-tabs {display:none;}
+.node-memory-form #edit-preview {display:none;}
+
+/*50th anniversary shared memories*/
+.view-shared-memories .views-row {
+	border:1px solid #ddd;
+	margin-top:25px;
+	padding:10px;
 }

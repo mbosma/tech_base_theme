@@ -214,14 +214,7 @@ body.page-type-department-option-landing-page #block-views-site-section-title-bl
   margin-left: 0;
 }
 
-/* Department Contact Info Style */
-.view-department-contact-info {
-	border:1px solid #CCC;
-	background-color:#eaeaea;
-	padding:10px;
-	font-size:.8em;
-	margin-bottom:10px;
-}
+
 
 .small-text {font-size:.8em;}
 .tight-lines {padding-top:3px;line-height:80% !important;}
@@ -518,10 +511,10 @@ h2.views-label-field-amount-received {
 	font-weight:bold;
 }
 
-/* Make text on featured degree on homepage smaller */
+/* Make text on featured degree on homepage smaller 
 .front #content_3columnMcWidget-column3 h2 a {
 	font-size:17px !important;
-}
+}*/
 
 /* Spacing for related degrees and continuing education on degree pages */
 #block-views-related-degrees-er-block .block-title,

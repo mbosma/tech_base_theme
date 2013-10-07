@@ -344,4 +344,7 @@ header[role=banner],
 	clear:both;
 }
 
-
+/*Hides create new child links for non-admin users who have access to view children pages*/
+.newchild {display:none;}
+.role-Website-Hero .newchild, 
+.role-Super-Editor .newchild {display:inherit;}

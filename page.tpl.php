@@ -75,14 +75,22 @@
             <header>
               <?php print render($title_prefix); ?>
               <?php if ($title):  
-			  
-			  if (count(menu_get_active_trail()) == 3 && !MENU_VISIBLE_IN_TREE) { ?>
-                <h1 id="page-title" style="display:none;"> <?php print $title; ?></h1>
-                <?php } else { ?>
-                <h1 id="page-title"> <?php print $title; ?></h1>
-              <?php } endif; ?>
-              <?php print render($title_suffix); ?>
-			  
+				//print MENU_VISIBLE_IN_TREE;
+				if (!MENU_VISIBLE_IN_TREE) {
+					print "<h1 id='page-title'>" . $title . "</h1>";
+				} else {
+					if (count(menu_get_active_trail()) == 3 && MENU_VISIBLE_IN_TREE) {
+						print "<h1 id='page-title' style='display:none;'>" . $title . "</h1>";
+					} else {
+						print "<h1 id='page-title'>" . $title . "</h1>";
+					};
+				};
+				endif;
+			  ?>
+			 
+    
+    
+    		  
 			  <?php if (isset($node->path_access_per_role_test) && $node->path_access_per_role_test == 'allow' || !isset($node->path_access_per_role_test)): ?>
 				  <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
 					<div id="tasks">

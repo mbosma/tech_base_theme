@@ -6,8 +6,8 @@ a:visited {color:#405375;}
 a:hover   {text-decoration:underline;}
 a:active  {}
 a.active  {}
-.field-name-body a:link    {color:#003399;}
-.field-name-body a:visited {color:#003399;}
+#content a:link    {color:#003399;}
+#content a:visited {color:#003399;}
 
 /**.field-items ul li {
 	margin-left:20px;
@@ -475,30 +475,14 @@ ul.secondary li a.active {
 #om-maximenu-leaderboard-master-menu .om-maximenu-content .views-row a:link    {color:#405375;}
 #om-maximenu-leaderboard-master-menu .om-maximenu-content .views-row a:visited {color:#405375;}
 #om-maximenu-leaderboard-master-menu .om-maximenu-content .block-menu-id-menu-org-units ul li.leaf {list-style-image: none; list-style-type:none; margin-left:3px; font-size:13px;}
-/* Make sure Maximenu blocks are moved to the top in IE
-#om-maximenu-leaderboard-master-menu, .om-maximenu-content, .om-maximenu, .open {
-	z-index: 20000 !important;
-}
-.om-menu, #om-menu-leaderboard-master-menu {
-	z-index: 21000 !important;}
 
-.block-menu-id-menu-org-units li {
-	list-style:none !important;
-	margin-left:3px !important;
-	list-style-image:none !important;
-	color:#405375 !important;
-	font-size:.9em !important;
-	line-height:1.5 !important;
-}
-.region-leaderboard {
-position:relative;
-z-index:200000000;
-}
-#main-content {
-position:relative;
-z-index:1;
-}
-*/
+/* Make sure Maximenu blocks are moved to the top in IE*/
+.om-maximenu-content {display:none\9 !important;}
+
+
+
+
+
 .block-menu-id-menu-org-units li a:link,
 .block-menu-id-menu-org-units li a:visited {
 	color:#405375 !important;

@@ -9,7 +9,7 @@ created by mbosma 3/6/2012
 .views-slideshow-controls-text-previous{
     background-image: url("images/slider-previous2.png");
     background-repeat:no-repeat;
-    z-index: 100;
+    z-index: 99 !important;
     position:absolute;
     left:15px;
     top:100px;

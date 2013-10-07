@@ -97,13 +97,13 @@ tr td:last-child {
 
 /* style directory table */
 
-.page-type-directory td.views-field-field-user-full-name {
-	width:28%;
+.page-type-directory td.views-field-realname {
+	width:28% !important;
 	
 }
 
 .page-type-directory td.views-field-field-position {
-	width:40%;
+	width:44% !important;
 	
 }
 
