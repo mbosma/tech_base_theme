@@ -4,6 +4,7 @@ This CSS document sets Block positioning and sizing only.
 HTML elements and regions are a separate file!
 -------------------------------------------------------------*/
 
+.test {color:red;} 
 
 .block {
   margin-bottom: 0px;
